@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta start -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta end -->
+    <!-- Link start -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Link end -->
+    <title>Index</title>
+</head>
+<body bgcolor="#76d7c4">
+    <div class="one"> 
+        <div class="two"> 
+            <h1>Side Bar</h1> 
+            <ul> 
+                <li class="active"><a href="{{url_for('index')}}">Index</a></li> 
+                <li><a href="{{url_for('display')}}">Display</a></li> 
+                <li><a href="{{url_for('update')}}">Update</a></li> 
+                <li><a href="{{url_for('logout')}}">Log out</a></li> 
+            </ul>  
+        </div> 
+        <div class="content" align="center"> 
+            <div class="topbar"> 
+                <h2>Welcome!! You are in Index Page!! </h2>                         
+            </div></br></br> 
+            <div class="contentbar"> 
+                 <div class="msg">{{ msg }}</div> 
+            </div>   
+              
+        </div> 
+    </div>
+</body>
+</html>
